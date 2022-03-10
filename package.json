@@ -1,0 +1,13 @@
+{
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "cuid": "^2.1.8",
+    "date-fns": "^2.28.0",
+    "minimist": "^1.2.5",
+    "puppeteer": "^13.5.0",
+    "toml": "^3.0.0"
+  },
+  "resolutions": {
+    "puppeteer@^13.5.0": "patch:puppeteer@npm:13.5.0#.yarn/patches/puppeteer-npm-13.5.0-32005c3d73.patch"
+  }
+}

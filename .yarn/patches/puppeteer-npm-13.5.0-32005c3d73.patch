@@ -1,0 +1,13 @@
+diff --git a/lib/cjs/puppeteer/common/helper.js b/lib/cjs/puppeteer/common/helper.js
+index 365924d10b4edf853e7a81560a98b0315c36a613..fe076c5947d0df7688e93345cafa79173a3ef005 100644
+--- a/lib/cjs/puppeteer/common/helper.js
++++ b/lib/cjs/puppeteer/common/helper.js
+@@ -251,7 +251,7 @@ async function getReadableAsBuffer(readable, path) {
+     for await (const chunk of readable) {
+         buffers.push(chunk);
+         if (fileHandle && fs) {
+-            await fs.promises.writeFile(fileHandle, chunk);
++            await fs.promises.writeFile(path, chunk);
+         }
+     }
+     if (path && fileHandle)

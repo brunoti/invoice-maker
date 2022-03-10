@@ -1,0 +1,13 @@
+description = 'service'
+
+[receiver]
+name = 'Company Name'
+email = 'mail@gmail.com'
+zipcode = ''
+city = ''
+address1 = 'Street Name'
+address2 = 'N 22'
+
+[payer]
+name = 'Payer Name'
+address = 'Payer Address'
